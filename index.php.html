@@ -7,10 +7,9 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>Document</title>
     <script>
-		//in case of https, redirect to http as a workaround for this firefox bug (https://bugzilla.mozilla.org/show_bug.cgi?id=1376310).
 		console.log("path: "+window.location.pathname);
 		if(window.location.pathname.endsWith("/index.php")) {
-			var newURL="https://project.asterics.eu/"+window.location.pathname+window.location.search;
+			var newURL="https://project.asterics.eu/index.php"+window.location.search;
 			console.log("Redirecting from "+window.location.href+"to "+newURL);
 			window.location.replace(newURL);
 		} else {
